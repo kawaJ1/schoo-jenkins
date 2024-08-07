@@ -325,7 +325,7 @@ public class AntXmlRunListener extends RunListener {
      * @param descr The test description.
      */
     public void testStarted(Description descr) {
-        m_testStarts.put(descr, new Long(System.currentTimeMillis()));
+        m_testStarts.put(descr, Long.valueOf(System.currentTimeMillis()));
     }
 
     private void formatError(String type, Failure f) {
