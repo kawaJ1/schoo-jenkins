@@ -126,7 +126,7 @@ final class DateUtils
     {
         long seconds = millis / ONE_SECOND;
         long minutes = seconds / ONE_MINUTE;
-        Object[] args = { new Long(minutes), new Long(seconds % ONE_MINUTE) };
+        Object[] args = { Long.valueOf(minutes), Long.valueOf(seconds % ONE_MINUTE) };
         return MINUTE_SECONDS.format(args);
     }
 
